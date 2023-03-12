@@ -5,6 +5,7 @@ import homework6.Employee;
 import homework6.Triangle;
 import homework6.Credit;
 import homework7.Circle;
+import homework9.Size;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +40,5 @@ public class Main {
         //додаємо дошку для торту, наслідуючи клас Circle
         Circle newCircle = new Circle(30);
         System.out.println(newCircle.getRadius());
-
     }
 }
