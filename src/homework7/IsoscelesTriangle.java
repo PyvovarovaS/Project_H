@@ -5,13 +5,15 @@ public class IsoscelesTriangle extends Triangle{
     private double sideB;
 
     //constructors
-    public IsoscelesTriangle(String name, double sideA, double height, double sideB) {
+    public IsoscelesTriangle(String name, double sideA, double sideB, double height) {
         super(name, sideA, height);
         this.sideB = sideB;
+        this.area = calculateArea();
     }
     public IsoscelesTriangle(String name, double sideA, double height) {
         super(name, sideA, height);
         this.sideB = sideA;
+        this.area = calculateArea();
     }
 
     //methods
@@ -27,5 +29,11 @@ public class IsoscelesTriangle extends Triangle{
     public void setSideB(double sideB) {
         this.sideB = sideB;
         this.area = calculateArea();
+    }
+    public double getPerimeter() {
+        return 2 * sideA + height;
+    }
+    public double getArea() {
+        return area;
     }
 }

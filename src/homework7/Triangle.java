@@ -25,6 +25,12 @@ public class Triangle extends Figure {
     public double getHeight() {
         return height;
     }
+    public double getPerimeter() {
+        return 2 * sideA + height;
+    }
+    public double getArea() {
+        return area;
+    }
 
     //setters
     public void setHeight(double height) {

@@ -38,7 +38,7 @@ public class Main {
         System.out.println(yearlyCredit.getRemainingBalance());
 
         //додаємо дошку для торту, наслідуючи клас Circle
-        Circle newCircle = new Circle(30);
+        Circle newCircle = new Circle("Circle", 30);
         System.out.println(newCircle.getRadius());
     }
 }

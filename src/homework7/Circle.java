@@ -8,13 +8,17 @@ public class Circle extends Figure{
     public Circle() {
         super();
     }
-    public Circle(double r) {
+    public Circle(String name, double r) {
+        super(name, 0);
         this.radius = r;
     }
 
     // methods
     public double getArea() {
         return Math.PI * radius * radius;
+    }
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
     }
 
     // getters
