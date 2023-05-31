@@ -6,8 +6,10 @@ public class RightTriangle extends Triangle {
 
     //constructors
     public RightTriangle(String name, double sideA, double sideB) {
-        super(name, sideA, calculateHeight(sideA, sideB));
+        super(name, sideA, 0);
         this.sideB = sideB;
+        this.height = calculateHeight(sideA, sideB);
+        this.area = calculateArea();
     }
     public RightTriangle(String name, double sideA, double sideB, double height) {
         super(name, sideA, height);

@@ -26,7 +26,8 @@ public class Triangle extends Figure {
         return height;
     }
     public double getPerimeter() {
-        return 2 * sideA + height;
+        double sideB = Math.sqrt(Math.pow(sideA / 2, 2) + Math.pow(height, 2));
+        return sideA + sideB + sideB;
     }
     public double getArea() {
         return area;

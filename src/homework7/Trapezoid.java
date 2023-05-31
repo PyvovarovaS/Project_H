@@ -19,6 +19,7 @@ public class Trapezoid extends Quadrangle{
     }
 
     //methods
+    @Override
     public double calculateArea() {
         return (base1 + base2) * height / 2;
     }

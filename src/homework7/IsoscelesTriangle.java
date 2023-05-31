@@ -31,7 +31,7 @@ public class IsoscelesTriangle extends Triangle{
         this.area = calculateArea();
     }
     public double getPerimeter() {
-        return 2 * sideA + height;
+        return 2 * sideA + sideB;
     }
     public double getArea() {
         return area;

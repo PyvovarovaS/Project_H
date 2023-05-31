@@ -8,9 +8,9 @@ public class Circle extends Figure{
     public Circle() {
         super();
     }
-    public Circle(String name, double r) {
+    public Circle(String name, double radius) {
         super(name, 0);
-        this.radius = r;
+        this.radius = radius;
     }
 
     // methods
@@ -27,7 +27,7 @@ public class Circle extends Figure{
     }
 
     // setters
-    public void setRadius(double r) {
-        this.radius = r;
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 }

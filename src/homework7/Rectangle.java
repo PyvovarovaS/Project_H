@@ -18,10 +18,10 @@ public class Rectangle extends Quadrangle{
 
     //methods
     public double calculateArea() {
-        return width * height;
+        return getWidth() * getHeight();
     }
     public double calculatePerimeter() {
-        return 2 * (width + height);
+        return 2 * (getWidth() + getHeight());
     }
 
     //getters
